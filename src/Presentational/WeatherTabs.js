@@ -7,7 +7,6 @@ class WeatherTabs extends Component {
     }
     
     componentDidMount() {
-        clearInterval(this.intervalCityWeatherUpdate);
         this.intervalCityWeatherUpdate = setInterval( () => {
             this.props.searchDatabase(this.props.cityPicked);
         }, 10000);
